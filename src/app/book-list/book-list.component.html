@@ -1,1 +1,5 @@
-<p>book-list works!</p>
+<div class="row">
+  <div class="col-4" *ngFor="let item of bookList" style="padding-top: 10px">
+    <app-book [book]="item" (delete)="updateList()" (edit)="goToEdit(item)"></app-book>
+  </div>
+</div>

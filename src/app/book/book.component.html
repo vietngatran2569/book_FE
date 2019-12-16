@@ -1,1 +1,11 @@
-<p>book works!</p>
+<div class="card" style="width: 18rem; height: 350px">
+  <img [src]="book.image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{book.name}}</h5>
+    <p class="card-text">{{book.description}}</p>
+    <p class="card-text">{{book.price}}</p>
+    <button (click)="editBook()">Sua</button>
+    <button (click)="deleteBook()">Xoa</button>
+  </div>
+</div>
+
